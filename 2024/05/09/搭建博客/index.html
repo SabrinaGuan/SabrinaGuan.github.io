@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>杯酒映烟火</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="杯酒映烟火">
+  <title>hexo+github搭建个人博客 | 杯酒映烟火</title>
+  <meta name="keywords" content=" hexo ">
+  <meta name="description" content="hexo+github搭建个人博客 | 杯酒映烟火">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -266,17 +266,34 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-indexs" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">hexo+github搭建个人博客</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="博客">博客</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">hexo</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-05-09 15:22:20'>2024-05-09 10:58</time>
+            发布时间 : <time class="date" title='最后更新: 2024-05-27 16:03:19'>2024-05-09 16:39</time>
         
     </div>
     <div class="article-meta">
@@ -298,7 +315,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%8F%B6%E8%90%BD%E9%98%81"><span class="toc-text">关于叶落阁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Git"><span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Node-js"><span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="toc-text">安装hexo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8D%9A%E5%AE%A2"><span class="toc-text">初始化博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5GitHub"><span class="toc-text">连接GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E7%A7%8D%E4%BF%9D%E5%AD%98%E5%AF%86%E7%A0%81%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-text">两种保存密码的方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%AD%E8%AF%81%E5%82%A8%E5%AD%98%E6%A8%A1%E5%BC%8F"><span class="toc-text">凭证储存模式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAGithub-Pages%E4%BB%93%E5%BA%93"><span class="toc-text">创建Github Pages仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2"><span class="toc-text">部署博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8hexo%E5%91%BD%E4%BB%A4"><span class="toc-text">常用hexo命令</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -314,29 +331,133 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于叶落阁"><a href="#关于叶落阁" class="headerlink" title="关于叶落阁"></a>关于叶落阁</h2><p><strong>叶落阁</strong> 是阁主（杨玉杰）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 生成，部署在 <a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>主题 <a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p><code>3-hexo</code> 主题使用交流可以加 Q群: <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e8cf083cc097141eaf323396f1766809b8e90ff00c67bb441898f672892f6904"><img data-ignore border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="3-hexo使用交流" title="3-hexo使用交流"></a></p>
-<p>主要功能：</p>
+        <p>Hexo：一个简单的开源博客框架，支持Markdown语言<br>GitHub Pages：由GitHub提供的静态站点托管服务。通过托管在Github仓库的博客代码发布静态网站页面。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p><strong>注意</strong></p>
 <ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad&#x2F;手机等移动端适配</li>
-<li>页面全局快捷键 <a target="_blank" rel="noopener" href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
+<li>该流程基于win10操作系统</li>
 </ul>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>前往<a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git官网</a>下载并安装<br><strong>因为需要使用Git Bash，所以下载setup版本</strong></p>
+<ul>
+<li>安装位置可自定义</li>
+<li>组件默认即可</li>
+<li>设置环境变量的选项里，选择第一个 <em>Use Git from Git Bash only</em></li>
+</ul>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>前往<a target="_blank" rel="noopener" href="https://nodejs.cn/">Node.js中文网站</a>下载并安装<br>安装完成后打开集成终端（Git Bash 或者 cmd）<br>依次输入</p>
+<blockquote>
+<p>node -v<br>npm -v<br>git -version</p>
+</blockquote>
+<p>出现版本号即为安装成功<br><strong>强烈提醒</strong><br>配置cnpm，或者配置淘宝镜像，不然下载依赖的速度将会非常慢</p>
+<ul>
+<li><p><strong>配置cnpm</strong></p>
+<blockquote>
+<p>npm install -g cnpm –registry&#x3D;<code>https://registry.npmmirror.com</code></p>
+</blockquote>
+</li>
+<li><p><strong>直接修改npm</strong></p>
+</li>
+</ul>
+<p>临时使用</p>
+<blockquote>
+<p>npm –registry <code>https://registry.npmmirror.com</code> </p>
+</blockquote>
+<p>永久使用</p>
+<blockquote>
+<p>npm config set registry <code>https://registry.npmmirror.com</code></p>
+</blockquote>
+<p>恢复原网址</p>
+<blockquote>
+<p>npm config set registry <code>https://registry.npmjs.org</code> </p>
+</blockquote>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>确认nodejs安装成功后</p>
+<blockquote>
+<p>npm install hexo-cli -g</p>
+</blockquote>
+<p>耐心等待安装完成</p>
+<h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h2><p>新建博客的本地文件夹，在文件夹内右键，启用git bash，并输入</p>
+<blockquote>
+<p>hexo init  #初始化</p>
+</blockquote>
+<p>也可以在父文件夹启用git bash，直接新建博客文件夹</p>
+<blockquote>
+<p>hexo init &lt;文件夹名称&gt;</p>
+</blockquote>
+<p>初始化完成后安装组件</p>
+<blockquote>
+<p>npm install #安装组件</p>
+</blockquote>
+<p>组件安装完成后就可以在本地部署和运行博客了</p>
+<blockquote>
+<p> hexo g #生成页面<br> hexo s #本地预览 </p>
+</blockquote>
+<h2 id="连接GitHub"><a href="#连接GitHub" class="headerlink" title="连接GitHub"></a>连接GitHub</h2><p>注册Github账户，注册邮箱</p>
+<p><strong>system级的设置会保存在Git的安装目录etc\gitconfig中</strong><br><strong>global级的设置会保存在C盘的用户文件夹下的gitconfig中</strong><br><strong>ssh秘钥会保存在c盘的用户文件夹下的gitconfig中</strong></p>
+<p><strong>注意不要把以上文件夹放入任何项目文件中，避免因为上传而泄露密码！！！！</strong></p>
+<p>启动Git Bash，设置GitHub的用户名和邮箱</p>
+<blockquote>
+<p>git config –global user.name “GitHub用户名”<br>git config –global user.email “GitHub邮箱”</p>
+</blockquote>
+<h3 id="两种保存密码的方式"><a href="#两种保存密码的方式" class="headerlink" title="两种保存密码的方式"></a>两种保存密码的方式</h3><p><strong>1. 直接利用git保存密码</strong> <em>不建议</em></p>
+<p><em>如果在安装Git时安装了GitGUI，会自动在system级别中设置credential.helper为manager，会默认使用该方式</em></p>
+<ul>
+<li>–system 为系统级设置，该计算机系统下所有用户有效<strong>不建议使用</strong></li>
+<li>–global 为用户级设置，该用户下所有项目有效</li>
+<li>在项目仓库文件中直接 git config，为项目级，仅在当前项目有效</li>
+</ul>
+<p>设置git记录账户密码</p>
+<blockquote>
+<p>git config –global credential.helper manager</p>
+</blockquote>
+<p>设置git取消（删除）记录的密码</p>
+<blockquote>
+<p>git config –global –unset credential.helper</p>
+</blockquote>
+<p>查询凭证的存储模式</p>
+<blockquote>
+<p>git config –global credential.helper<br>或<br>git config –global –list<br>或<br>git config –global -l</p>
+</blockquote>
+<p>通过修改配置文件设置记录</p>
+<blockquote>
+<p>git config –file&#x3D;~&#x2F;.git_credentails –global credential.helper “manager”<br>或<br>git config –global  user.name “manager”</p>
+</blockquote>
+<p>临时记住默认15分钟</p>
+<blockquote>
+<p>git config –global credential.helper cache</p>
+</blockquote>
+<p>记住1小时</p>
+<blockquote>
+<p>git config credential.helper ‘cache –timeout&#x3D;3600’</p>
+</blockquote>
+<h4 id="凭证储存模式"><a href="#凭证储存模式" class="headerlink" title="凭证储存模式"></a>凭证储存模式</h4><ul>
+<li>cache 临时保存凭证</li>
+<li>store 永久性明码保存在本地磁盘中</li>
+<li>manager 利用windows的凭证保存功能，加密存放在磁盘中，cmd命令行和控制面板都可删除</li>
+<li>osxkeychain 适用于Mac用户，与manager同理</li>
+</ul>
+<p><strong>2. SSH秘钥</strong><br>查询用户主目录下是否有.ssh<br><em>有的话直接跳过这一步</em><br>在git bash中输入</p>
+<blockquote>
+<p>ssh-keygen -t rsa -C “GitHub邮箱”</p>
+</blockquote>
+<p>打开.ssh文件夹，打开公钥id_rsa.pub并复制里面的内容<br>登录GitHub，进入Setting页面，找到SSH and GPG keys页面，点击New SSH key，Title自定义一个，黏贴公钥内容，点击Add SSH key</p>
+<p>在git bash中输入</p>
+<blockquote>
+<p>ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;">&#103;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;</a></p>
+</blockquote>
+<p>一路确认到最后出现成功连接的提示。</p>
+<h2 id="创建Github-Pages仓库"><a href="#创建Github-Pages仓库" class="headerlink" title="创建Github Pages仓库"></a>创建Github Pages仓库</h2><ol>
+<li>在GitHub主页点开New repository </li>
+<li>Repository name 输入 用户名.github.io <strong>必须用用户名</strong></li>
+<li>勾选 “Initialize this respository with a README”</li>
+<li>Description选填</li>
+<li>点击Create repository</li>
+</ol>
+<p>博客地址为： https:&#x2F;&#x2F;用户名.github.io</p>
+<h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><p>在博客文件夹的git终端输入</p>
+<blockquote>
+<p>hexo d</p>
+</blockquote>
+<h2 id="常用hexo命令"><a href="#常用hexo命令" class="headerlink" title="常用hexo命令"></a>常用hexo命令</h2><blockquote>
+<p>hexo new “name”       # 新建文章<br>hexo new page “name”  # 新建页面<br>hexo g                # 生成页面<br>hexo d                # 部署<br>hexo g -d             # 生成页面并部署<br>hexo s                # 本地预览<br>hexo clean            # 清除缓存和已生成的静态文件<br>hexo help             # 帮助</p>
+</blockquote>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证。 </span>

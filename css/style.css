@@ -536,6 +536,12 @@
 .nav-left .author {
   text-align: center;
   height: 27px;
+  color: #8fccfa;
+  font-size: 14px;
+}
+.nav-left .title {
+  text-align: center;
+  height: 27px;
   color: #fff;
 }
 .nav-left .more-menus {
